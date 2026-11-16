@@ -2,7 +2,7 @@
 
 > **FINAL PROJECT UPDATE:** This project has been upgraded to detect modern generative AI images (like Midjourney, DALL-E, and Gemini) in addition to traditional deepfakes. 
 
-## 🚀 How to Run the Project 
+##  How to Run the Project 
 
 ### Option 1: Automatic Setup (Recommended for Windows)
 Simply double-click **`Start_App.bat`**. 
@@ -21,7 +21,7 @@ The web interface will open automatically in your browser at `http://127.0.0.1:7
 
 ---
 
-## 🌟 Key Features in this Final Version
+##  Key Features in this Final Version
 1. **Explainable CNN Model:** A custom ConvNeXt-Tiny model equipped with a Frequency Gating Mechanism (FGEM). Optimized for CPU and GPU execution with **calibrated probability metrics**.
 2. **Metadata Background Check:** Automatically inspects the raw binary headers and EXIF data of uploaded images to detect hidden AI software signatures (e.g., SynthID, C2PA, Midjourney, DALL-E) or missing camera hardware metadata, while preserving authentic phone camera photos.
 3. **Visual AI Detection:** Integrates HuggingFace image classification to visually scan full images for pure generative AI artifacts.
