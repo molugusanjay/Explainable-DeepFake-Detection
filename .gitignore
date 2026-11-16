@@ -1,0 +1,62 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Dataset images (large binary files — do not commit)
+data/raw/
+data/prepared/faces/
+data/prepared/manifest.csv
+data/mixed_manifest.csv
+
+# Trained model checkpoints (large binary files)
+models/checkpoints/
+*.pt
+*.pth
+*.onnx
+
+# Results (auto-generated — commit selectively)
+results/runs/*/best.pt
+results/runs/*/last.pt
+results/runs/*/calibrated.pt
+
+# Gradio temporary files
+**/gradio_temp/
+
+# Matplotlib cache
+**/matplotlib/
+
+# Torch hub cache
+**/torch/
+
+# IDE / editor
+.vscode/settings.json
+.idea/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Pytest cache
+.pytest_cache/
+*.pytest_cache
+
+# Coverage
+.coverage
+htmlcov/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Build artifacts
+*.egg-info/
+dist/
+build/

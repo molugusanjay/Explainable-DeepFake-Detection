@@ -1,0 +1,67 @@
+# REFERENCE ONLY: src/run_mixed_experiment.py does not parse this YAML.
+# This file documents the controlled mixed experiment implemented by that runner.
+# Actual settings are its CLI command arguments and checkpoint training_args.
+# No dataset CSV manifests or baseline checkpoints are included in this package.
+
+record_type: "reference_only_mixed_protocol"
+experiment_name: "mixed_cnn_vs_frequency"
+description: >
+  Single-seed controlled comparison of ConvNeXt-Tiny with and without patch
+  and global DCT frequency enhancement. Both use the same mixed split,
+  ImageNet initialization family, optimizer and six-epoch maximum.
+
+datasets:
+  - name: "DeepFakeFace"
+    domain: "DFF"
+    manifest: "data/dff_prepared/manifest.csv"
+    path_prefix: "dff_prepared"
+  - name: "FaceForensics++"
+    domain: "FFPP"
+    manifest: "data/prepared/manifest.csv"
+    path_prefix: "prepared"
+
+mixed_manifest: "data/mixed_manifest.csv"
+
+models:
+  cnn_only:
+    mode: "cnn"
+    output: "results/runs/mixed_cnn"
+  frequency:
+    mode: "both"
+    output: "results/runs/mixed_frequency"
+
+shared_settings:
+  backbone: "tiny"
+  epochs: 6
+  batch_size: 8
+  accumulation: 2
+  workers: 0
+  learning_rate: 0.00004
+  weight_decay: 0.01
+  patience: 3
+  seed: 42
+  pretrained: true
+  sampling: "Equal dataset and class mass; equal fake-method mass within each dataset"
+  selection: "Mean of per-dataset validation balanced accuracies at threshold 0.5"
+
+evaluation:
+  calibrate: true
+  calibration_split: "val"
+  calibration_method: "Minimum cross-entropy over 201 positive log-spaced temperatures"
+  test_split: "test"
+  threshold: 0.5
+  accuracy_target: 0.95
+  target_met_by_selected_model: false
+  legacy_test_disclosure: "Previously inspected test splits; repeated benchmark evaluations"
+
+selected_deployment:
+  candidate: "mixed_frequency"
+  checkpoint: "models/checkpoints/final_frequency/calibrated.pt"
+  human_epoch: 4
+  temperature: 2.7164392471313477
+  rule: "Higher macro validation balanced accuracy among frequency candidates"
+  additional_holdout_used_for_selection: false
+
+# The later transfer refinement has a different initialization history and is
+# not part of the controlled CNN-only ablation. Its parent checkpoints and full
+# training evidence are not present in this reorganized inference package.

@@ -1,0 +1,16 @@
+Failed to find real location of C:\Program Files\Python314\python.exe
+============================= test session starts =============================
+platform win32 -- Python 3.14.3, pytest-9.1.1, pluggy-1.6.0
+cachedir: .build\revision_20261009\pytest_cache2
+rootdir: C:\Users\heman\Documents\DeepFake_Project\DeepFake_Detection_FYP
+configfile: pyproject.toml
+testpaths: tests
+plugins: anyio-4.15.1
+collected 20 items
+
+tests\test_core.py ............                                          [ 60%]
+tests\test_local_workflow.py ....                                        [ 80%]
+tests\test_sampling.py ...                                               [ 95%]
+tests\test_transfer.py .                                                 [100%]
+
+============================= 20 passed in 54.78s =============================

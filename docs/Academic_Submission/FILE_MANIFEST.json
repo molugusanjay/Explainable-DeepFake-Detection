@@ -1,0 +1,74 @@
+{
+  "Academic_Project_Presentation_Reviewed.pptx": {
+    "sha256": "42e79505a4e2feec8f6da3df9213fa074b0ff55c2efb129a0f426412d65604c7",
+    "bytes": 560167
+  },
+  "Comprehensive_Project_Report.md": {
+    "sha256": "e248cf83b1160c36b5a3b6e546faa51388ca4b4bdd1acb9dbd77905180105fca",
+    "bytes": 44730
+  },
+  "Comprehensive_Project_Report.pdf": {
+    "sha256": "05d3597647ac080885fe713b64266ea18a6f16de2eb9c74291aaa7c5e90b4c10",
+    "bytes": 676168
+  },
+  "Professor_Classmate_Guidebook.md": {
+    "sha256": "a34bf9409af6a1dbae253642735871e41556b0b5b31149d361dacaf1210d11d0",
+    "bytes": 14828
+  },
+  "Professor_Classmate_Guidebook.pdf": {
+    "sha256": "275dede95dd2f89832f8d4221cb1ec5de7c0bfe8ecc57829cb2c0fdb4cfa2138",
+    "bytes": 849106
+  },
+  "REVIEW_AND_VERIFICATION.md": {
+    "sha256": "f901aa02a25648212de079e5587e01a0fae7e5fb0ffcc345d41405f541588cab",
+    "bytes": 3657
+  },
+  "START_HERE.md": {
+    "sha256": "df424f03e831b10b420d56dd8c63d0bccaaf8f31186ee90dd7379abc1c781e04",
+    "bytes": 1218
+  },
+  "Viva_Preparation_Guide.md": {
+    "sha256": "554f0d6b7ac8bb6de01b49567b46e791c2e34f6aff13468822ddeb872713cddf",
+    "bytes": 28079
+  },
+  "Viva_Preparation_Guide.pdf": {
+    "sha256": "c831e99f5bf1d70472b4607276a3260361c5a5b23bab1f696381ea2857543c3d",
+    "bytes": 108401
+  },
+  "Evidence/checkpoint_audit.json": {
+    "sha256": "4bbaf2df77dfadbdd2e981735d51028401f159fd5b2855f18826dd58083d7fa0",
+    "bytes": 6570
+  },
+  "Evidence/current_0_heatmap.png": {
+    "sha256": "bb3a441f4543bf7aa213c71673be27db416b82bbc6bfeb1e97fa956889861475",
+    "bytes": 100110
+  },
+  "Evidence/current_0_original.png": {
+    "sha256": "4f8abc125208951a73062470f5589ef77dbc0f8b0b5ff18ebb3ccbd72438cdb3",
+    "bytes": 99184
+  },
+  "Evidence/current_1_heatmap.png": {
+    "sha256": "3314a6e5c6710d28e903fbd0344632519abe915bbfcd40fb532f4b630d8bfcb3",
+    "bytes": 106689
+  },
+  "Evidence/current_1_original.png": {
+    "sha256": "2dbf089d9bf28fb17574ef963e8a855e4c00350ade53b77ada534488a896da85",
+    "bytes": 106621
+  },
+  "Evidence/current_review.json": {
+    "sha256": "59fc40072947ba68cdd59bc2ccaff98603f333055dd71fb4a602e3c53cc37c34",
+    "bytes": 4186
+  },
+  "Evidence/pytest_final.txt": {
+    "sha256": "cdee55c19016a4882ada4421a804d8dd6ddb6a0ad3dd63b9d1b65d5e9c6180c5",
+    "bytes": 836
+  },
+  "Evidence/review_predictions.csv": {
+    "sha256": "605de92fb73d7d34dad7d41f3ef8e51839b604faa84720b7e89df76b390cc211",
+    "bytes": 21526
+  },
+  "Evidence/source_hashes.json": {
+    "sha256": "b9a48b7e28fdfe51e3974d38e4bca0ce6bffab9593cf36d59553bcd20d0e0f62",
+    "bytes": 2328
+  }
+}

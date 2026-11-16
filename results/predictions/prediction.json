@@ -1,0 +1,16 @@
+{
+  "prediction": "FAKE",
+  "confidence": 0.9799306392669678,
+  "probability_fake": 0.9799306392669678,
+  "probability_real": 0.02006934955716133,
+  "confidence_type": "Validation-calibrated",
+  "explanation": "The middle central facial area and upper central facial area contributed most strongly in the displayed map to the FAKE prediction (left/right refer to the image as displayed). The classifier combines learned visual features with mid/high-frequency feature information. Grad-CAM shows model attention; it does not prove those pixels were edited or identify a specific artifact type.",
+  "face_box": [
+    183,
+    39,
+    314,
+    214
+  ],
+  "heatmap_class": "FAKE",
+  "display_mask": "Approximate facial oval, not a pixel-level forgery mask"
+}
